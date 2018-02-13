@@ -6,11 +6,9 @@
   }
 
   &__content {
-    @extend .b-typeset;
-
-    h3, h4, h5, h6 {
-      border-bottom: 1px solid #f0f4f7;
-      margin-bottom: 2rem;
+    hr {
+      @extend .b-divider;
+      margin: 1em 0;
     }
 
     strong, b {
@@ -18,17 +16,21 @@
     }
 
     pre {
+      margin: 2em 0;
       color: #fff;
       line-height: 19px;
       font-family: Menlo, Consolas, 'Andale Mono', monospace;
       background: #272c35;
       border-radius: 2px;
-      font-size: .95rem;
+      font-size: .85rem;
       padding: 1em;
       border: none;
       box-shadow: none;
 
       code {
+        background: {
+          color: transparent;
+        }
         padding: 0;
       }
     }

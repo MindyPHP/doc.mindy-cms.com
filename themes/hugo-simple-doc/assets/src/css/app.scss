@@ -1,13 +1,12 @@
-@import 'fonts/icon';
-@import 'fonts/socicon';
-
 @import 'settings';
-@import '~flexy-framework/flexy/flexy';
-@import '~flexy-framework/flexy/theme/default';
+
+@import "~flexy-framework/flexy/flexy";
+@import "~flexy-framework/flexy/theme/default/index";
 
 @import 'global';
 @import 'code';
 
+@import 'block/search';
 @import 'block/site';
 @import 'block/body';
 @import 'block/contributors';

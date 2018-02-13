@@ -3,16 +3,9 @@
   color: #fff;
 }
 
-* {
-  box-sizing: border-box;
-  outline: none;
-}
-
 a {
   color: flexy-color();
 }
 
 @include flexy-heading {
-  margin-top: 2rem;
-  margin-bottom: .5rem;
 }

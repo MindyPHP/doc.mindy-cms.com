@@ -1,28 +1,23 @@
 .b-site {
-  margin-left: 250px;
-
   &__sidebar {
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    overflow-y: auto;
     background: {
       color: #f0f4f7;
     }
-    position: fixed;
-    width: 250px;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    transition: all 0.3s ease-in;
-    z-index: 2;
-    box-sizing: border-box;
-    padding: 1em;
-    overflow-y: auto;
-    overflow-x: hidden;
   }
 
   &__content {
+    padding: 1em 0;
+    margin: 0 2em 0 calc(250px + 2em);
     background: {
       color: #fff;
     }
-    box-sizing: border-box;
-    padding: 2em 0;
+    max-width: 978px;
   }
 }
