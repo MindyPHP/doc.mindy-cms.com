@@ -36,7 +36,7 @@
         {{- if not $.Site.Params.disableNavChevron -}}
         {{- with ($.Scratch.Get "prevPage") -}}
         <a class="b-nav__link b-nav__link_prev" href="{{.URL}}" title="{{ .Title }}">
-            <span class="b-icon">keyboard_arrow_left</span>
+            <i class="icon angle left"></i>
             <span class="b-nav__text b-nav__text_prev">{{ .Title }}</span>
         </a>
         {{ end -}}
@@ -44,7 +44,7 @@
         <a class="b-nav__link b-nav__link_next" href="{{.URL}}" title="{{ .Title }}"
            style="margin-right: 0px;">
             <span class="b-nav__text b-nav__text_next">{{ .Title }}</span>
-            <span class="b-icon">keyboard_arrow_right</span>
+            <i class="icon angle right"></i>
         </a>
         {{- end }}
         {{- end -}}

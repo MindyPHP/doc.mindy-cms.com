@@ -6,22 +6,31 @@
   }
 
   &__content {
+    hr {
+      @extend .b-divider;
+      margin: 1em 0;
+    }
+
     strong, b {
       font-weight: 600;
     }
 
     pre {
+      margin: 2em 0;
       color: #fff;
       line-height: 19px;
       font-family: Menlo, Consolas, 'Andale Mono', monospace;
       background: #272c35;
       border-radius: 2px;
-      font-size: .95rem;
+      font-size: .85rem;
       padding: 1em;
       border: none;
       box-shadow: none;
 
       code {
+        background: {
+          color: transparent;
+        }
         padding: 0;
       }
     }

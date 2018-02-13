@@ -1424,14 +1424,6 @@ cliui@^3.0.3, cliui@^3.2.0:
     strip-ansi "^3.0.1"
     wrap-ansi "^2.0.0"
 
-cliui@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/cliui/-/cliui-4.0.0.tgz#743d4650e05f36d1ed2575b59638d87322bfbbcc"
-  dependencies:
-    string-width "^2.1.1"
-    strip-ansi "^4.0.0"
-    wrap-ansi "^2.0.0"
-
 clone-buffer@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/clone-buffer/-/clone-buffer-1.0.0.tgz#e3e25b207ac4e701af721e2cb5a16792cac3dc58"
@@ -2059,12 +2051,6 @@ domutils@1.5.1:
     dom-serializer "0"
     domelementtype "1"
 
-dot-prop@^4.1.1:
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/dot-prop/-/dot-prop-4.2.0.tgz#1f19e0c2e1aa0e32797c49799f2837ac6af69c57"
-  dependencies:
-    is-obj "^1.0.0"
-
 download@^4.0.0, download@^4.1.2:
   version "4.4.3"
   resolved "https://registry.yarnpkg.com/download/-/download-4.4.3.tgz#aa55fdad392d95d4b68e8c2be03e0c2aa21ba9ac"
@@ -2475,7 +2461,7 @@ extend-shallow@^2.0.1:
   dependencies:
     is-extendable "^0.1.0"
 
-extend-shallow@^3.0.0, extend-shallow@^3.0.2:
+extend-shallow@^3.0.0:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/extend-shallow/-/extend-shallow-3.0.2.tgz#26a71aaf073b39fb2127172746131c2704028db8"
   dependencies:
@@ -2666,30 +2652,59 @@ flagged-respawn@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/flagged-respawn/-/flagged-respawn-1.0.0.tgz#4e79ae9b2eb38bf86b3bb56bf3e0a56aa5fcabd7"
 
-flexy-breakpoint@^1.0.0, flexy-breakpoint@^1.0.1:
+flexy-block-grid@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/flexy-block-grid/-/flexy-block-grid-1.0.0.tgz#da0e18fe6615076c84fca5162588e2b3c65a0014"
+  dependencies:
+    flexy-breakpoint "1.0.1"
+    flexy-device "^1.0.1"
+    flexy-functions "^1.0.3"
+
+flexy-breakpoint@1.0.1, flexy-breakpoint@^1.0.0, flexy-breakpoint@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/flexy-breakpoint/-/flexy-breakpoint-1.0.1.tgz#16b1d866b55eb5942509a7a109ba0643070d80ec"
   dependencies:
     flexy-functions "1.0.3"
 
-flexy-device@^1.0.1:
+flexy-device@1.0.1, flexy-device@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/flexy-device/-/flexy-device-1.0.1.tgz#d144a317c87cfe29a0525f0714c61d1f6433c9a6"
   dependencies:
     flexy-breakpoint "^1.0.0"
     flexy-functions "1.0.3"
 
-flexy-framework@^4.2.3:
-  version "4.2.3"
-  resolved "https://registry.yarnpkg.com/flexy-framework/-/flexy-framework-4.2.3.tgz#a75c33d4fdd9ff3de6b5ff52a286f9c43965530d"
+flexy-flexgrid@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/flexy-flexgrid/-/flexy-flexgrid-1.0.1.tgz#ac2628a5a012b7e3fcef95a8ec9acae9b2048776"
+  dependencies:
+    flexy-breakpoint "^1.0.1"
+    flexy-functions "^1.0.3"
 
-flexy-functions@1.0.3, flexy-functions@^1.0.3:
+flexy-framework@5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/flexy-framework/-/flexy-framework-5.0.1.tgz#c16aef461a180f2b1299a4115e4781b921a8e2f4"
+  dependencies:
+    flexy-block-grid "^1.0.0"
+    flexy-breakpoint "^1.0.0"
+    flexy-device "1.0.1"
+    flexy-flexgrid "^1.0.1"
+    flexy-functions "^1.0.0"
+    flexy-icon "^2.0.0"
+    flexy-reset "1.0.2"
+    flexy-visibility "^1.0.0"
+    node-sass-tilde-importer "^1.0.1"
+
+flexy-functions@1.0.3, flexy-functions@^1.0.0, flexy-functions@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/flexy-functions/-/flexy-functions-1.0.3.tgz#44f5e66a8710cfc20360fc03325f2ebdb3805c25"
 
-flexy-reset@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/flexy-reset/-/flexy-reset-1.0.1.tgz#89fb9addc776aec94253796832e19b6e2d787985"
+flexy-icon@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/flexy-icon/-/flexy-icon-2.0.0.tgz#0960991b7fdfa8c47aee8c5fbe775fef55f3e200"
+
+flexy-reset@1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/flexy-reset/-/flexy-reset-1.0.2.tgz#83bc070e420a2ad16b35583a338b0dbd6d55f628"
 
 flexy-visibility@^1.0.0:
   version "1.0.0"
@@ -3150,15 +3165,6 @@ gulp-postcss@^7.0.1:
     postcss-load-config "^1.2.0"
     vinyl-sourcemaps-apply "^0.2.1"
 
-gulp-purgecss@^0.19.0:
-  version "0.19.0"
-  resolved "https://registry.yarnpkg.com/gulp-purgecss/-/gulp-purgecss-0.19.0.tgz#bff685f4880453bbdd4c550f5e1af213eea1bf2f"
-  dependencies:
-    glob "^7.1.2"
-    plugin-error "^1.0.0"
-    purgecss "^0.19.0"
-    through2 "^2.0.3"
-
 gulp-rename@^1.2.0:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/gulp-rename/-/gulp-rename-1.2.2.tgz#3ad4428763f05e2764dec1c67d868db275687817"
@@ -3587,10 +3593,6 @@ indent-string@^2.1.0:
   resolved "https://registry.yarnpkg.com/indent-string/-/indent-string-2.1.0.tgz#8e2d48348742121b4a8218b7a137e9a52049dc80"
   dependencies:
     repeating "^2.0.0"
-
-indexes-of@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/indexes-of/-/indexes-of-1.0.1.tgz#f30f716c8e2bd346c7b67d3df3915566a7c05607"
 
 indexof@0.0.1:
   version "0.0.1"
@@ -4527,10 +4529,6 @@ matchdep@^2.0.0:
     resolve "^1.4.0"
     stack-trace "0.0.10"
 
-material-design-icons@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/material-design-icons/-/material-design-icons-3.0.1.tgz#9a71c48747218ebca51e51a66da682038cdcb7bf"
-
 math-clamp-x@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/math-clamp-x/-/math-clamp-x-1.2.0.tgz#8b537be0645bbba7ee73ee16091e7d6018c5edcf"
@@ -5308,10 +5306,6 @@ parse-passwd@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/parse-passwd/-/parse-passwd-1.0.0.tgz#6d5b934a456993b23d37f40a382d6f1666a8e5c6"
 
-parse5@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/parse5/-/parse5-4.0.0.tgz#6d78656e3da8d78b4ec0b906f7c08ef1dfe3f608"
-
 parseqs@0.0.5:
   version "0.0.5"
   resolved "https://registry.yarnpkg.com/parseqs/-/parseqs-0.0.5.tgz#d5208a3738e46766e291ba2ea173684921a8b89d"
@@ -5458,15 +5452,6 @@ plugin-error@^0.1.2:
     arr-union "^2.0.1"
     extend-shallow "^1.1.2"
 
-plugin-error@^1.0.0:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/plugin-error/-/plugin-error-1.0.1.tgz#77016bd8919d0ac377fdcdd0322328953ca5781c"
-  dependencies:
-    ansi-colors "^1.0.1"
-    arr-diff "^4.0.0"
-    arr-union "^3.1.0"
-    extend-shallow "^3.0.2"
-
 plur@^2.1.2:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/plur/-/plur-2.1.2.tgz#7482452c1a0f508e3e344eaec312c91c29dc655a"
@@ -5528,14 +5513,6 @@ postcss-loader@^2.0.10:
     postcss "^6.0.0"
     postcss-load-config "^1.2.0"
     schema-utils "^0.3.0"
-
-postcss-selector-parser@^3.1.1:
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/postcss-selector-parser/-/postcss-selector-parser-3.1.1.tgz#4f875f4afb0c96573d5cf4d74011aee250a7e865"
-  dependencies:
-    dot-prop "^4.1.1"
-    indexes-of "^1.0.1"
-    uniq "^1.0.1"
 
 postcss-value-parser@^3.2.3:
   version "3.3.0"
@@ -5645,21 +5622,6 @@ punycode@1.3.2:
 punycode@^1.2.4, punycode@^1.4.1:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-1.4.1.tgz#c0d5a63b2718800ad8e1eb0fa5269c84dd41845e"
-
-purgecss-from-html@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/purgecss-from-html/-/purgecss-from-html-1.0.0.tgz#be2e05e5a430a612a37add9334b854e517ead23a"
-  dependencies:
-    parse5 "^4.0.0"
-
-purgecss@^0.19.0:
-  version "0.19.0"
-  resolved "https://registry.yarnpkg.com/purgecss/-/purgecss-0.19.0.tgz#6f6a1b11b80438dc61b1b287f66b7fcdef9946c5"
-  dependencies:
-    glob "^7.1.2"
-    postcss "^6.0.16"
-    postcss-selector-parser "^3.1.1"
-    yargs "^10.1.1"
 
 q@^1.1.2:
   version "1.5.1"
@@ -6356,10 +6318,6 @@ sntp@2.x.x:
   dependencies:
     hoek "4.x.x"
 
-socicon@^3.0.5:
-  version "3.0.5"
-  resolved "https://registry.yarnpkg.com/socicon/-/socicon-3.0.5.tgz#bfa06fcf7f2b6f3cdc3944337742358e9e050b6d"
-
 socket.io-adapter@~1.1.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/socket.io-adapter/-/socket.io-adapter-1.1.1.tgz#2a805e8a14d6372124dd9159ad4502f8cb07f06b"
@@ -6633,7 +6591,7 @@ string-width@^1.0.1, string-width@^1.0.2:
     is-fullwidth-code-point "^1.0.0"
     strip-ansi "^3.0.0"
 
-string-width@^2.0.0, string-width@^2.1.1:
+string-width@^2.0.0:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/string-width/-/string-width-2.1.1.tgz#ab93f27a8dc13d28cac815c462143a6d9012ae9e"
   dependencies:
@@ -7188,10 +7146,6 @@ union-value@^1.0.0:
     is-extendable "^0.1.1"
     set-value "^0.4.3"
 
-uniq@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/uniq/-/uniq-1.0.1.tgz#b31c5ae8254844a3a8281541ce2b04b865a734ff"
-
 unique-filename@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/unique-filename/-/unique-filename-1.1.0.tgz#d05f2fe4032560871f30e93cbe735eea201514f3"
@@ -7644,12 +7598,6 @@ yargs-parser@^7.0.0:
   dependencies:
     camelcase "^4.1.0"
 
-yargs-parser@^8.1.0:
-  version "8.1.0"
-  resolved "https://registry.yarnpkg.com/yargs-parser/-/yargs-parser-8.1.0.tgz#f1376a33b6629a5d063782944da732631e966950"
-  dependencies:
-    camelcase "^4.1.0"
-
 yargs@3.29.0:
   version "3.29.0"
   resolved "https://registry.yarnpkg.com/yargs/-/yargs-3.29.0.tgz#1aab9660eae79d8b8f675bcaeeab6ee34c2cf69c"
@@ -7679,23 +7627,6 @@ yargs@6.4.0:
     window-size "^0.2.0"
     y18n "^3.2.1"
     yargs-parser "^4.1.0"
-
-yargs@^10.1.1:
-  version "10.1.2"
-  resolved "https://registry.yarnpkg.com/yargs/-/yargs-10.1.2.tgz#454d074c2b16a51a43e2fb7807e4f9de69ccb5c5"
-  dependencies:
-    cliui "^4.0.0"
-    decamelize "^1.1.1"
-    find-up "^2.1.0"
-    get-caller-file "^1.0.1"
-    os-locale "^2.0.0"
-    require-directory "^2.1.1"
-    require-main-filename "^1.0.1"
-    set-blocking "^2.0.0"
-    string-width "^2.0.0"
-    which-module "^2.0.0"
-    y18n "^3.2.1"
-    yargs-parser "^8.1.0"
 
 yargs@^7.0.0, yargs@^7.1.0:
   version "7.1.0"
